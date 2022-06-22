@@ -11,10 +11,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="UseCases\Common\DTO\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\ChallengeMeLi.Domain\ChallengeMeLi.Domain.csproj" />
     <ProjectReference Include="..\ChallengeMeLi.Shared\ChallengeMeLi.Shared.csproj" />
   </ItemGroup>
