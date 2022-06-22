@@ -42,4 +42,4 @@ A nivel arquitectura se opto por el patrón **Clean Architecture**, donde su pri
 
 ![clean architecture diagram](https://blog.cleancoder.com/uncle-bob/images/2012-08-13-the-clean-architecture/CleanArchitecture.jpg)
 
-A nivel diseño se utilizo principalmente el patrón **Mediator**, ya que con este es posible reducir las dependencias entre objetos y capas. En este proyecto concretamente, permitió principalmente que la capa de los Controllers no se comuniquen directamente con la de Application, que es donde reside toda la lógica.
+A nivel diseño se utilizo principalmente el patrón **Mediator**, ya que con este es posible reducir las dependencias entre objetos y capas. En este proyecto concretamente, permitió que la capa de los Controllers no se comuniquen directamente con la de Application, que es donde reside toda la lógica.
