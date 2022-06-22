@@ -39,6 +39,7 @@ Proyecto para el challenge de MercadoLibre para la posición de Backend Develope
 En el proyecto se utilizo diferentes patrones de diseño y de arquitectura que proporcionaron mantenimiento, independencia entre capas y principalmente escalabilidad.
 
 A nivel arquitectura se opto por el patrón **Clean Architecture**, donde su principal benéfico es la aislación de nuestra lógica de dominio haciendo que esta sea independiente de la UI, la base de datos o cualquier otro framework que se utilice.
+
 ![clean architecture diagram](https://blog.cleancoder.com/uncle-bob/images/2012-08-13-the-clean-architecture/CleanArchitecture.jpg)
 
 A nivel diseño se utilizo principalmente el patrón **Mediator**, ya que con este es posible reducir las dependencias entre objetos y capas. En este proyecto concretamente, permitió principalmente que la capa de los Controllers no se comuniquen directamente con la de Application, que es donde reside toda la lógica.
