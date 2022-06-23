@@ -1,5 +1,3 @@
-using ChallengeMeLi.Persistence;
-
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 
@@ -11,7 +9,6 @@ namespace ChallengeMeLi
 		{
 			CreateHostBuilder(args)
 				.Build()
-				.MigrateDatabase()
 				.Run();
 		}
 
@@ -20,7 +17,6 @@ namespace ChallengeMeLi
 				.ConfigureWebHostDefaults(webBuilder =>
 				{
 					webBuilder.UseStartup<Startup>();
-					webBuilder.UseUrls("http://*:5024");
 				});
 	}
 }
