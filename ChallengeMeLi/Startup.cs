@@ -26,9 +26,6 @@ namespace ChallengeMeLi
 		// This method gets called by the runtime. Use this method to add services to the container.
 		public void ConfigureServices(IServiceCollection services)
 		{
-			var builder = new SqlConnectionStringBuilder(Configuration.GetConnectionString("DefaultConnection"));
-			builder.Password = Configuration["meli-pass-db"];
-
 			services.AddApplicationServices();
 			services.AddPersistenceServices(Configuration);
 
@@ -45,9 +42,9 @@ namespace ChallengeMeLi
 			if (env.IsDevelopment())
 			{
 				app.UseDeveloperExceptionPage();
-				app.UseSwagger();
-				app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "ChallengeMeLi v1"));
 			}
+			app.UseSwagger();
+			app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "ChallengeMeLi v1"));
 
 			app.UseHttpsRedirection();
 
