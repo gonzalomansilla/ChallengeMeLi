@@ -22,4 +22,12 @@
     <ProjectReference Include="..\ChallengeMeLi.Persistence\ChallengeMeLi.Persistence.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="..\.dockerignore" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="..\.dockerignore" />
+  </ItemGroup>
+
 </Project>
