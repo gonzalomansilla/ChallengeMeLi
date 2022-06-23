@@ -1,13 +1,32 @@
-# # ChallengeMeLi
+
+# Challenge MeLi
 
 Proyecto para el challenge de MercadoLibre para la posición de Backend Developer.
 
 ### Catacteristicas
+#### Tecnlogías
 * [ASP.NET Core (.NET Core 5)](https://dotnet.microsoft.com/en-us/apps/aspnet/microservices)
 * [Entity Framework 5](https://docs.microsoft.com/en-us/ef/)
 * [SQL Server](https://www.microsoft.com/es-es/sql-server/sql-server-downloads)
+* [Docker](https://www.docker.com/)
 * Unit Test y Integration Test con [XUnit](https://xunit.net/)
 * [Swagger](https://swagger.io/) como explorador y documentador de APIs
+
+#### Servicios de Azure Portal
+* [Azure DevOps](https://azure.microsoft.com/es-es/services/devops/)
+	
+	Plataforma para crear los pipelines que se encargaran de ejecutar automáticamente las tareas de CI (Continous Integration) y CD (Continous Delivery)
+* [Azure SQL Database](https://azure.microsoft.com/es-es/products/azure-sql/database/#overview)
+	
+	Base de datos en la nube para persistir los datos
+
+* [Azure Container Registry](https://azure.microsoft.com/es-es/services/container-registry/)
+	
+	Servicio para registrar las imágenes de docker
+	
+* [Azure App Service](https://azure.microsoft.com/es-es/services/app-service/)
+	
+	Servicio en la nube para hospedar microservicios
 
 ## Instalación
 1. Instalar el SDK de [.NET Core 5](https://download.visualstudio.microsoft.com/download/pr/14ccbee3-e812-4068-af47-1631444310d1/3b8da657b99d28f1ae754294c9a8f426/dotnet-sdk-5.0.408-win-x64.exe)
@@ -22,7 +41,8 @@ Proyecto para el challenge de MercadoLibre para la posición de Backend Develope
   ```
 4. Modificar el ConnectionString con el host local
 
-	  ![connection string](https://i.imgur.com/3arqmTY.png)
+  ![connection string](https://i.imgur.com/3arqmTY.png)
+  
 5. Restaurar los paquetes y generar las dependencias:
   ```
   dotnet restore
@@ -34,6 +54,9 @@ Proyecto para el challenge de MercadoLibre para la posición de Backend Develope
 7. Probar las apis:
 
     La URL base es https://localhost:5001/ seguido de los distintos endpoints ya conocidos
+
+## Consideraciones
+Una vez ejecutado el proyecto, este realizara automáticamente las migraciones iniciales que crearan las tablas, sus relaciones y los datos iniciales requeridos por el microservicio.
 
 ## Características del proyecto
 En el proyecto se utilizo diferentes patrones de diseño y de arquitectura que proporcionaron mantenimiento, independencia entre capas y principalmente escalabilidad.
